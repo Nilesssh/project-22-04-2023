@@ -78,10 +78,11 @@ function filtered(){
     // }else{
     //     nice = "Admin";
     // }
-    document.getElementById("professionnn").innerHTML = "";
+    
     if(e===""){
         alert("Please Select the Profession");
     }else{
+        document.getElementById("professionnn").innerHTML = "";
         let newarr = arr.filter(user=> user.profession.toLowerCase()===e);
     document.getElementById("profession").innerHTML = "";
     newarr.forEach(user => {
